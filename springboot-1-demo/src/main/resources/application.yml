@@ -1,0 +1,22 @@
+#设定模式环境
+spring:
+  profiles:
+    active: test
+
+--- #表示环境的分割
+spring:
+  profiles: prod   #表示生产环境
+#tomcat具体配置信息
+server:
+  port: 80
+  servlet:
+    context-path: /       #标识启动路径
+
+--- #表示环境的分割
+spring:
+  profiles: test   #表示测试环境
+#tomcat具体配置信息
+server:
+  port: 8091
+  servlet:
+    context-path: /jt       #标识启动路径
