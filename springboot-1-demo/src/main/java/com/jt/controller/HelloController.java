@@ -12,6 +12,6 @@ public class HelloController {
 	@ResponseBody
 	public String hello() {
 		
-		return "1904班第一天下课了!!!!";
+		return "1904班第一天下课了666!!!!";
 	}
 }
